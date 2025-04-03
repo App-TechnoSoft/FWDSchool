@@ -4,21 +4,15 @@ using FWDSchool.Web.Models;
 
 namespace FWDSchool.Web.Controllers;
 
-public class HomeController : Controller
+public class VersionControlController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
-
-     public IActionResult Index()
+    
+    public IActionResult Index()
     {
         return View();
     }
-    
-    public IActionResult Privacy()
+
+    public IActionResult About()
     {
         return View();
     }
@@ -28,5 +22,4 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-
 }
