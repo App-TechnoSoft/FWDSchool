@@ -6,7 +6,7 @@ namespace FWDSchool.Web.Controllers;
 
 public class FrontendController : Controller
 {
-     public IActionResult index1()
+     public IActionResult Index()
     {
         return View();
     }
