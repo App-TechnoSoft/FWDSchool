@@ -4,8 +4,10 @@
 ## Web Development (Full Stack)
 * Frontend: HTML, CSS, JS/TS, Figma Mockups, SPA (React/Angular/Vue) 
 * Application Backend:  .NET, Java, Python, PHP etc.
-* Data: Relational - MySql, SQLite, SQL Server, Oracle, Postgres etc.
-	NoSQL/Document - MongoDb, DynamoDB etc.
+* Database: 
+    * Relational - MySql, SQLite, SQL Server, Oracle, Postgres etc.
+	* NoSQL/Document - MongoDb, DynamoDB etc.
+    * ORM (Object Relational Mapper) Tools: EF Core, Dapper etc.
 * .NET - SDK
 * ASP.NET Core - Web Framework
 * 0, 1, 1, 2, 3, 5, 8, 13....
