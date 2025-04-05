@@ -22,6 +22,17 @@ Id(PK), Title, Description, Type, Published, Author
 ### TutorialSection
 Id(Pk), Title, Content, Image, LastUpdated, Author, TutorialId(FK)
 
+## Connect with sql server
+* Install MSSql
+* Connect to Database
+* Add URL from NuGet
+1. dotnet add package Microsoft.EntityFrameworkCore
+1. dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+1. dotnet add package Microsoft.EntityFrameworkCore.Design
+1. dotnet tool install --global dotnet-ef
+1. dotnet ef migrations add "CreateDbaAndTables" -o \Data\Migrations
+1. dotnet ef database uptade
+
 
 # Application Progress
 1. Add project template
