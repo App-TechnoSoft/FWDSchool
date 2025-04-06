@@ -6,9 +6,18 @@ namespace FWDSchool.Web.Controllers;
 
 public class FrontendController : Controller
 {
-     public IActionResult Index()
+    public IActionResult Index()
     {
-        return View();
+        var db = new FWDSchoolDb();
+        var tutorials = db.Tutorials.Where(x => x.Type == "Frontend").ToList();  // Select * from Tutorials
+        return View(tutorials);
+    }
+
+    public IActionResult Html()
+    {
+        var db = new FWDSchoolDb();
+        var tutorials = db.Tutorials.ToList();  // Select * from Tutorials
+        return View(tutorials);
     }
 
 }
