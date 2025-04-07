@@ -1,0 +1,118 @@
+@{
+    ViewData["Title"] = "About Page";
+}
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <h2>About Version Control:</h2>
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <p>Version Control is a system that helps to manage changes to files,code or projects over time. It's
+                    especially important in collaborative environments,where multiple people are working on the same
+                    project.</p>
+                <ol>
+                    <li>Track changes: It keeps a history of every changes made to your files, so you can revisit or
+                        restore earlier versions if needed.</li>
+                    <li>Collaborate Seamlessly: It allows teams to working together without overwriting each other's
+                        work, merging contributions from different people.</li>
+                    <li>Branching: You can create separate versions(branches) of your project to experiment,fix bugs,or
+                        develop features without affecting the main version.</li>
+                    <li>Conflict Resolution: If changes from multiple contributors clash, version control helps you
+                        resolve those conflicts.</li>
+                    <p>Our team is using popular tools for version control include Git, paired with platforms like
+                        GitHub for remote repository management and collaborative development. </p>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4">
+        <p>If you're just starting with Git and GitHub.Here is some guide to set up and running in Windows.</p>
+        <ol>
+            <li>Install Git</li>
+            <ul>
+                <li>Download Git from the official Git website.</li>
+                <a href="https://git-scm.com/">Click here to download</a>
+                <li>Follow the installation wizard accordingly.</li>
+            </ul>
+            <li>Set Up Git</li>
+            <ul>
+                <li>Open your terminal or command prompt.</li>
+                <li>Check the git version to ensure Git is installed correctly or not.</li>
+                <pre>
+        <code class="language-bash">git --version</code>
+        </pre>
+                <li>Configure your username and email.</li>
+                <pre>
+        <code class="language-bash">
+        git config --global user.name 'Username'
+        git config --global user.email 'example@email.com'
+        </code>
+        </pre>
+                <li>Verify your setup.</li>
+                <pre>
+        <code class="language-bash">git  config --global --list</code>
+        </pre>
+            </ul>
+            <li>Download Visual Studio Code and install accordingly.</li>
+            <a href="https://code.visualstudio.com/">Click here to download.</a>
+            <li>Create a GitHub account.</li>
+            <ul>
+                <li>If you have github account already, you can simply login.If you have not follow the step below.
+                </li>
+                <li>Go to the GitHub website.</li>
+                <a href="https://github.com/">Go to the site</a>
+                <li>Click on the "Sign up" button in the top-right corner.</li>
+                <li>Enter your email address,then create a username and password.</li>
+                <li>You'll need to verify your email address by clicking the link GitHub sends to your inbox.</li>
+                <li>Once signed in, you can create repositories, explore other's projects and start using git to
+                    collaborate.
+                </li>
+                <li>To create the new repository by clicking the "+" icon in the top-right corner.</li>
+                <li>Then provide new repository name and click on add readme.md and click create repository.</li>
+
+
+            </ul>
+            <li>Clone a repository</li>
+            <ul>
+                <li>Locate the Code button - it's easy to spot with its green background in Github profile.</li>
+                <li>Click on the Code button to reveal the URL.</li>
+                <li>Once the URL is displayed, simply copy it.</li>
+                <li>Open the terminal and changes the directory where you want to clone this repository.</li>
+                <li>Use the following command to clone a repository to your local machine.</li>
+                <pre>
+        <code class="language-bash">git clone <--Paste the URL here--></code>
+        </pre>
+            </ul>
+            <li>Once the cloning is complete,navigate into the cloned repository using :
+            </li>
+            <pre>
+            <code class="language-bash">cd <--repository name--></code>
+            </pre>
+            <li>We simply perform these basic Git Commands to manage projects and track changes. </li>
+            <ul>
+                <li>Track changes:
+                    <pre>
+            <code class="language-bash">
+            git add . =>(for all files)
+            git add .filename =>(For specific)
+            </code>
+            </pre>
+                </li>
+                <li>Commit Changes:
+                    <pre>
+            <code class="language-bash">git commit -m "Your commit message"</code>
+            </pre>
+                </li>
+                <li>Push changes to GitHub:
+                    <pre>
+            <code class="language-bash">
+            git push origin main</code>
+            </pre>
+                </li>
+            </ul>
+        </ol>
+    </div>
