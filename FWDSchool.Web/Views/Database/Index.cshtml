@@ -1,0 +1,31 @@
+@model List<Tutorial>
+
+<h2>All tutorials on Database</h2>
+
+<div class="row">
+
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <div class="col-sm-3 col-lg-6 mb-3 mb-sm-0 col">
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-item-center">
+                        <h5 class="card-title">@Model[i].Title - @Model[i].Type</h5>
+                        <p class="card-text"><small class="text-body-secondary">Published on
+                                @Model[i].Published.ToString("MMM d, yyyy")</small></p>
+                    </div>
+                    <p class="card-text">@Model[i].Description</p>
+
+
+                    <a href="#" class="btn btn-primary">Learn more about @Model[i].Title</a>
+                    <div class="text-end">
+                        <p class="card-text"><small class="text-body-secondary">Written by @Model[i].Author</small></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
