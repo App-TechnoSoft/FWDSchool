@@ -23,4 +23,11 @@ public class TutorialsController : Controller
 
         return RedirectToAction("Index", "Frontend");
     }
+
+    public IActionResult Sections(int id)
+    {
+        var db = new FWDSchoolDb();
+        var sections = db.TutorialSections.Where(x => x.TutorialId == id).ToList();
+        return View(sections);
+    }
 }

@@ -12,12 +12,4 @@ public class FrontendController : Controller
         var tutorials = db.Tutorials.Where(x => x.Type == TutorialType.Frontend).ToList();  // Select * from Tutorials
         return View(tutorials);
     }
-
-    public IActionResult Html()
-    {
-        var db = new FWDSchoolDb();
-        var tutorials = db.Tutorials.ToList();  // Select * from Tutorials
-        return View(tutorials);
-    }
-
 }

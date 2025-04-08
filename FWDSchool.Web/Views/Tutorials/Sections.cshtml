@@ -1,0 +1,7 @@
+@model List<TutorialSection>
+
+@foreach(var s in Model)
+{
+    <h1>@s.Title</h1>
+    <p>@s.Content</p>
+}
