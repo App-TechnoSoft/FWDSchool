@@ -9,18 +9,22 @@ public class TutorialSectionController : Controller
     [HttpGet]
     public IActionResult Add()
     {
+        var db = new FWDSchoolDb();
+        var tutorials = db.Tutorials.ToList();
+        ViewData["tutorials"] = tutorials;
+        
         return View();
     }
 
     [HttpPost]
-    public IActionResult Add(TutorialSection tutorial)
+    public IActionResult Add(TutorialSection section)
     {
-        // Save this tutorial to db
+        // Save this tutorialsection to db
         var db = new FWDSchoolDb();
-        tutorial.LastUpdated = DateTime.Now;
-        db.TutorialSections.Add(tutorial);
+        section.LastUpdated = DateTime.Now;
+        db.TutorialSections.Add(section);
         db.SaveChanges();
 
-        return RedirectToAction("Index", "Frontend");
+        return Created();
     }
 }
