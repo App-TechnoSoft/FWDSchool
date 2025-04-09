@@ -5,11 +5,14 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  background-color: rgb(rgb(192, 188, 188));
+}
+.navbar-brand img {
+  filter: brightness(0.9); /* Adjust brightness */
 }
 
-a {
-  color: #0077cc;
-}
+
+
 
 .btn-primary {
   color: #fff;
@@ -45,4 +48,7 @@ button.accept-policy {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+  background-color: grey;
+  margin-top: 20px;
 }
+
