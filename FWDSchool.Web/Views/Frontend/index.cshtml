@@ -10,7 +10,7 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-item-center">
 
-                        <h5 class="card-title">@Model[i].Title - @Model[i].Type</h5>                        
+                        <h5 class="card-title">@Model[i].Title - @Model[i].Type</h5>
                         <p class="card-text"><small class="text-body-secondary">Published on
                                 @Model[i].Published.ToString("MMM d, yyyy")</small></p>
                     </div>
@@ -18,7 +18,7 @@
                     <a href="/tutorials/sections/@Model[i].Id" class="btn btn-primary">Learn more about @Model[i].Title</a>
                     <div class="text-end">
                         <p class="card-text"><small class="text-body-secondary">Written by @Model[i].Author</small></p>
-
+                    <img height="200" src="@(string.IsNullOrEmpty(Model[i].ImagePath) ? "/images/FWDLogo.png" : Model[i].ImagePath)" />
                     </div>
                 </div>
             </div>
