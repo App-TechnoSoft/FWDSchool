@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 public class Tutorial
 {
     public int Id { get; set; }
@@ -6,4 +8,9 @@ public class Tutorial
     public TutorialType Type { get; set; }
     public DateTime Published { get; set; }
     public string Author { get; set; }
+
+    public string ImagePath { get; set; }
+
+    [NotMapped]
+    public IFormFile File { get; set; }
 }
